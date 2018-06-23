@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Alias" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="flc-K4-Sev">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="mu7-gd-Bc9">
+                                <rect key="frame" x="0.0" y="20" width="375" height="210"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Man" translatesAutoresizingMaskIntoConstraints="NO" id="tkX-rJ-doE">
+                                        <rect key="frame" x="0.0" y="0.0" width="187.5" height="210"/>
+                                    </imageView>
+                                    <stackView opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Dkk-nL-KXx">
+                                        <rect key="frame" x="187.5" y="0.0" width="187.5" height="210"/>
+                                        <subviews>
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" layoutMarginsFollowReadableWidth="YES" pagingEnabled="YES" contentInsetAdjustmentBehavior="scrollableAxes" bouncesZoom="NO" editable="NO" text="NAME" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Qjx-dq-wTY" userLabel="Name">
+                                                <rect key="frame" x="4" y="0.0" width="180" height="50"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="50" id="Hzl-iU-Ejq"/>
+                                                    <constraint firstAttribute="width" constant="180" id="PkJ-uu-po7"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="30"/>
+                                                <textInputTraits key="textInputTraits" autocapitalizationType="words" spellCheckingType="no" textContentType="name"/>
+                                            </textView>
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" layoutMarginsFollowReadableWidth="YES" pagingEnabled="YES" contentInsetAdjustmentBehavior="scrollableAxes" bouncesZoom="NO" editable="NO" text="NAME" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Ft3-4b-nko" userLabel="Name Ending">
+                                                <rect key="frame" x="15.5" y="50" width="157" height="40"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="157" id="Keu-Zb-oKT"/>
+                                                    <constraint firstAttribute="height" constant="40" id="NqS-2G-E30"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="25"/>
+                                                <textInputTraits key="textInputTraits" autocapitalizationType="words" spellCheckingType="no" textContentType="name"/>
+                                            </textView>
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" bouncesZoom="NO" editable="NO" text="###-###-####" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="o65-gD-laF" userLabel="Phone Number">
+                                                <rect key="frame" x="9" y="90" width="169.5" height="40"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="40" id="LXC-oa-OG1"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="25"/>
+                                                <textInputTraits key="textInputTraits" autocapitalizationType="words" spellCheckingType="no" textContentType="name"/>
+                                                <dataDetectorType key="dataDetectorTypes" phoneNumber="YES"/>
+                                            </textView>
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" bouncesZoom="NO" editable="NO" text="MON. ##, ####" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="lPW-WN-YDz" userLabel="Birthday">
+                                                <rect key="frame" x="2" y="130" width="183.5" height="40"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="40" id="f0G-SJ-XgK"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="25"/>
+                                                <textInputTraits key="textInputTraits" autocapitalizationType="words" spellCheckingType="no" textContentType="name"/>
+                                            </textView>
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" bouncesZoom="NO" editable="NO" text="##" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="410-Jp-g5Z" userLabel="Age">
+                                                <rect key="frame" x="74.5" y="170" width="39" height="40"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="40" id="uOr-Y0-leP"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="25"/>
+                                                <textInputTraits key="textInputTraits" autocapitalizationType="words" spellCheckingType="no" textContentType="name"/>
+                                            </textView>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="tkX-rJ-doE" firstAttribute="leading" secondItem="mu7-gd-Bc9" secondAttribute="leading" id="KHm-vv-Lzj"/>
+                                    <constraint firstItem="tkX-rJ-doE" firstAttribute="top" secondItem="mu7-gd-Bc9" secondAttribute="top" id="mIQ-Np-8PX"/>
+                                </constraints>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="eOI-ce-ecj">
+                                <rect key="frame" x="0.0" y="230" width="375" height="332"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="0qf-Xt-JFI">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="90.5"/>
+                                        <subviews>
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" bouncesZoom="NO" editable="NO" text="Address:" translatesAutoresizingMaskIntoConstraints="NO" id="W8s-dy-zKh" userLabel="Address">
+                                                <rect key="frame" x="0.0" y="0.0" width="120" height="40"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="120" id="6Yu-ES-wJQ"/>
+                                                    <constraint firstAttribute="height" constant="40" id="iho-qv-xjE"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="24"/>
+                                                <textInputTraits key="textInputTraits" autocapitalizationType="words" spellCheckingType="no" textContentType="name"/>
+                                            </textView>
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" bouncesZoom="NO" editable="NO" text="#### Street City, ST #####" translatesAutoresizingMaskIntoConstraints="NO" id="vQu-Kv-1bC" userLabel="Address Var">
+                                                <rect key="frame" x="120" y="0.0" width="255" height="90"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="90" id="RX1-Ca-DBC"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="24"/>
+                                                <textInputTraits key="textInputTraits" autocapitalizationType="words" spellCheckingType="no" textContentType="name"/>
+                                                <dataDetectorType key="dataDetectorTypes" address="YES"/>
+                                            </textView>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="8Ye-Pe-GY1">
+                                        <rect key="frame" x="0.0" y="90.5" width="375" height="240"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="BWo-nO-06v">
+                                                <rect key="frame" x="0.0" y="0.0" width="375" height="40"/>
+                                                <subviews>
+                                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" bouncesZoom="NO" editable="NO" text="Favorite Color:" translatesAutoresizingMaskIntoConstraints="NO" id="PO0-C4-RGb" userLabel="Favorite Color">
+                                                        <rect key="frame" x="0.0" y="0.0" width="180" height="40"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="180" id="2Lx-vU-Bv2"/>
+                                                            <constraint firstAttribute="height" constant="40" id="rzF-uU-RWY"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="24"/>
+                                                        <textInputTraits key="textInputTraits" autocapitalizationType="words" spellCheckingType="no" textContentType="name"/>
+                                                    </textView>
+                                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" bouncesZoom="NO" editable="NO" text="Job" translatesAutoresizingMaskIntoConstraints="NO" id="csL-Zs-mBB" userLabel="Favorite Color Var">
+                                                        <rect key="frame" x="180" y="0.0" width="195" height="40"/>
+                                                        <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="24"/>
+                                                        <textInputTraits key="textInputTraits" autocapitalizationType="words" spellCheckingType="no" textContentType="name"/>
+                                                        <dataDetectorType key="dataDetectorTypes" address="YES"/>
+                                                    </textView>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="UID-xi-8CD">
+                                                <rect key="frame" x="0.0" y="40" width="375" height="40"/>
+                                                <subviews>
+                                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" bouncesZoom="NO" editable="NO" text="Job:" translatesAutoresizingMaskIntoConstraints="NO" id="2Ma-yT-HCq" userLabel="Job">
+                                                        <rect key="frame" x="0.0" y="0.0" width="70" height="40"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="70" id="2g5-FZ-FEY"/>
+                                                            <constraint firstAttribute="height" constant="40" id="MbK-Ub-86l"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="24"/>
+                                                        <textInputTraits key="textInputTraits" autocapitalizationType="words" spellCheckingType="no" textContentType="name"/>
+                                                    </textView>
+                                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" bouncesZoom="NO" editable="NO" text="Job" translatesAutoresizingMaskIntoConstraints="NO" id="tJS-0N-lTJ" userLabel="Job Var">
+                                                        <rect key="frame" x="70" y="0.0" width="305" height="40"/>
+                                                        <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="24"/>
+                                                        <textInputTraits key="textInputTraits" autocapitalizationType="words" spellCheckingType="no" textContentType="name"/>
+                                                        <dataDetectorType key="dataDetectorTypes" address="YES"/>
+                                                    </textView>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="o33-bG-IT5">
+                                                <rect key="frame" x="0.0" y="80" width="375" height="40"/>
+                                                <subviews>
+                                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" bouncesZoom="NO" editable="NO" text="Company:" translatesAutoresizingMaskIntoConstraints="NO" id="Pg3-gw-qZa" userLabel="Company">
+                                                        <rect key="frame" x="0.0" y="0.0" width="140" height="40"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="140" id="UZE-TD-8bx"/>
+                                                            <constraint firstAttribute="height" constant="40" id="eFi-ta-WB1"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="24"/>
+                                                        <textInputTraits key="textInputTraits" autocapitalizationType="words" spellCheckingType="no" textContentType="name"/>
+                                                    </textView>
+                                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" bouncesZoom="NO" editable="NO" text="Company" translatesAutoresizingMaskIntoConstraints="NO" id="7bi-0B-BDa" userLabel="Company Var">
+                                                        <rect key="frame" x="140" y="0.0" width="235" height="40"/>
+                                                        <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="24"/>
+                                                        <textInputTraits key="textInputTraits" autocapitalizationType="words" spellCheckingType="no" textContentType="name"/>
+                                                        <dataDetectorType key="dataDetectorTypes" address="YES"/>
+                                                    </textView>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Sqw-1G-VIO">
+                                                <rect key="frame" x="0.0" y="120" width="375" height="40"/>
+                                                <subviews>
+                                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" bouncesZoom="NO" editable="NO" text="Height:" translatesAutoresizingMaskIntoConstraints="NO" id="fOw-Ap-CWA" userLabel="Height">
+                                                        <rect key="frame" x="0.0" y="0.0" width="100" height="40"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="100" id="Lah-H5-UUL"/>
+                                                            <constraint firstAttribute="height" constant="40" id="niv-ID-IeO"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="24"/>
+                                                        <textInputTraits key="textInputTraits" autocapitalizationType="words" spellCheckingType="no" textContentType="name"/>
+                                                    </textView>
+                                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" bouncesZoom="NO" editable="NO" text="5' 9&quot;" translatesAutoresizingMaskIntoConstraints="NO" id="Jnu-4z-oe6" userLabel="Height Var">
+                                                        <rect key="frame" x="100" y="0.0" width="275" height="40"/>
+                                                        <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="24"/>
+                                                        <textInputTraits key="textInputTraits" autocapitalizationType="words" spellCheckingType="no" textContentType="name"/>
+                                                        <dataDetectorType key="dataDetectorTypes" address="YES"/>
+                                                    </textView>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" alignment="bottom" translatesAutoresizingMaskIntoConstraints="NO" id="XaK-kS-0G5">
+                                                <rect key="frame" x="0.0" y="160" width="375" height="40"/>
+                                                <subviews>
+                                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" bouncesZoom="NO" editable="NO" text="Weight:" translatesAutoresizingMaskIntoConstraints="NO" id="CL1-bt-vUv" userLabel="Weight">
+                                                        <rect key="frame" x="0.0" y="0.0" width="110" height="40"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="110" id="2Sc-zm-Bue"/>
+                                                            <constraint firstAttribute="height" constant="40" id="DFl-v1-iZp"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="24"/>
+                                                        <textInputTraits key="textInputTraits" autocapitalizationType="words" spellCheckingType="no" textContentType="name"/>
+                                                    </textView>
+                                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" bouncesZoom="NO" editable="NO" text="149 lbs (44 kg)" translatesAutoresizingMaskIntoConstraints="NO" id="aJA-dR-0K2" userLabel="Weight Var">
+                                                        <rect key="frame" x="110" y="0.0" width="265" height="40"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="40" id="Mm0-cT-1W6"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="24"/>
+                                                        <textInputTraits key="textInputTraits" autocapitalizationType="words" spellCheckingType="no" textContentType="name"/>
+                                                        <dataDetectorType key="dataDetectorTypes" address="YES"/>
+                                                    </textView>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" alignment="bottom" translatesAutoresizingMaskIntoConstraints="NO" id="dXD-UU-Hyh">
+                                                <rect key="frame" x="0.0" y="200" width="375" height="40"/>
+                                                <subviews>
+                                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" bouncesZoom="NO" editable="NO" text="Blood Type:" translatesAutoresizingMaskIntoConstraints="NO" id="ddq-lk-apA" userLabel="Blood Type">
+                                                        <rect key="frame" x="0.0" y="0.0" width="150" height="40"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="40" id="BPg-aF-Xp2"/>
+                                                            <constraint firstAttribute="width" constant="150" id="J7o-6c-7PB"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="24"/>
+                                                        <textInputTraits key="textInputTraits" autocapitalizationType="words" spellCheckingType="no" textContentType="name"/>
+                                                    </textView>
+                                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" bouncesZoom="NO" editable="NO" text="O+" translatesAutoresizingMaskIntoConstraints="NO" id="xAf-BS-RsD" userLabel="Blood Type Var">
+                                                        <rect key="frame" x="150" y="0.0" width="225" height="40"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="40" id="iGb-KA-lEd"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="24"/>
+                                                        <textInputTraits key="textInputTraits" autocapitalizationType="words" spellCheckingType="no" textContentType="name"/>
+                                                        <dataDetectorType key="dataDetectorTypes" address="YES"/>
+                                                    </textView>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="-5" translatesAutoresizingMaskIntoConstraints="NO" id="6uw-nT-EOH">
+                                        <rect key="frame" x="0.0" y="330.5" width="375" height="1.5"/>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="6uw-nT-EOH" secondAttribute="trailing" id="1Sd-ig-zfb"/>
+                                    <constraint firstAttribute="trailing" secondItem="0qf-Xt-JFI" secondAttribute="trailing" id="EFk-Vj-vAz"/>
+                                    <constraint firstAttribute="trailing" secondItem="8Ye-Pe-GY1" secondAttribute="trailing" id="Mfo-Is-OeR"/>
+                                    <constraint firstItem="6uw-nT-EOH" firstAttribute="leading" secondItem="eOI-ce-ecj" secondAttribute="leading" id="fu7-1a-tRy"/>
+                                    <constraint firstItem="0qf-Xt-JFI" firstAttribute="leading" secondItem="eOI-ce-ecj" secondAttribute="leading" id="xO8-U7-G5G"/>
+                                    <constraint firstItem="8Ye-Pe-GY1" firstAttribute="leading" secondItem="eOI-ce-ecj" secondAttribute="leading" id="yTa-pc-wsp"/>
+                                </constraints>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H7a-8F-zhP" userLabel="Generate">
+                                <rect key="frame" x="37.5" y="572" width="300" height="75"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="300" id="CWU-1C-KXj"/>
+                                    <constraint firstAttribute="height" constant="75" id="zox-Lv-5O7"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="17"/>
+                                <state key="normal" image="Generate">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="generateButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="XNh-54-Mpj"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.99143940210000003" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="mu7-gd-Bc9" firstAttribute="leading" secondItem="flc-K4-Sev" secondAttribute="leading" id="4UJ-ee-Ii9"/>
+                            <constraint firstItem="mu7-gd-Bc9" firstAttribute="top" secondItem="flc-K4-Sev" secondAttribute="top" constant="20" id="Btu-OL-Cp9"/>
+                            <constraint firstAttribute="trailing" secondItem="mu7-gd-Bc9" secondAttribute="trailing" id="Cki-fa-y9l"/>
+                            <constraint firstItem="rYo-Yb-YmA" firstAttribute="bottom" secondItem="H7a-8F-zhP" secondAttribute="bottom" constant="20" id="GT9-8a-V66"/>
+                            <constraint firstItem="H7a-8F-zhP" firstAttribute="top" secondItem="eOI-ce-ecj" secondAttribute="bottom" constant="10" id="dKK-c7-bUe"/>
+                            <constraint firstItem="H7a-8F-zhP" firstAttribute="centerX" secondItem="flc-K4-Sev" secondAttribute="centerX" id="eBj-r6-b3P"/>
+                            <constraint firstItem="eOI-ce-ecj" firstAttribute="leading" secondItem="rYo-Yb-YmA" secondAttribute="leading" id="mx5-tK-yBt"/>
+                            <constraint firstItem="eOI-ce-ecj" firstAttribute="top" secondItem="mu7-gd-Bc9" secondAttribute="bottom" id="sca-7d-ikU"/>
+                            <constraint firstItem="rYo-Yb-YmA" firstAttribute="trailing" secondItem="eOI-ce-ecj" secondAttribute="trailing" id="yDy-kA-4nV"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="rYo-Yb-YmA"/>
+                    </view>
+                    <connections>
+                        <outlet property="Address" destination="vQu-Kv-1bC" id="xhr-QA-iK8"/>
+                        <outlet property="Age" destination="410-Jp-g5Z" id="omt-Jr-84U"/>
+                        <outlet property="Birthday" destination="lPW-WN-YDz" id="djb-kH-I7x"/>
+                        <outlet property="BloodType" destination="xAf-BS-RsD" id="ag7-AE-u4h"/>
+                        <outlet property="Company" destination="7bi-0B-BDa" id="uqT-dY-y4B"/>
+                        <outlet property="Height" destination="Jnu-4z-oe6" id="ma3-Cc-Hav"/>
+                        <outlet property="Job" destination="tJS-0N-lTJ" id="Wa0-rZ-HF4"/>
+                        <outlet property="Name" destination="Qjx-dq-wTY" id="hKF-Pq-YKr"/>
+                        <outlet property="Number" destination="o65-gD-laF" id="NjQ-Rw-nKx"/>
+                        <outlet property="Weight" destination="aJA-dR-0K2" id="fjn-nn-7ht"/>
+                        <outlet property="endName" destination="Ft3-4b-nko" id="Z6O-yc-BVt"/>
+                        <outlet property="favoriteColorUI" destination="csL-Zs-mBB" id="8fA-3e-hr4"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="37.600000000000001" y="31.934032983508249"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Generate" width="312" height="73"/>
+        <image name="Man" width="312" height="312"/>
+    </resources>
+</document>
